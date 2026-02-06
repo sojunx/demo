@@ -3,9 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- Font preload để giảm layout shift -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Navbar Active</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header id="header">
+      <nav id="navbar">
+        <h3>sojunx</h3>
+
+        <ul id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">Home</section>
+    <section id="about">About</section>
+    <section id="skills">Skills</section>
+    <section id="contact">Contact</section>
+
+    <script src="main.js"></script>
   </body>
 </html>
